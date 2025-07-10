@@ -1,0 +1,39 @@
+@import "tailwindcss";
+#root {
+  background-color: aliceblue;
+
+}
+
+
+
+/* index.css */
+
+/* --- Estilos para o BODY (globais e mobile-first) --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #babfc4;
+}
+
+/* --- Estilos para o HEADER (mobile-first) --- */
+header {
+  background-image: url('./src/assets/bg.png');
+  background-size: cover;       /* Essencial para responsividade da imagem */
+  background-position: center top; /* Posicionamento para mobile */
+  background-repeat: no-repeat; /* Evita repetição */
+
+  /* Altura mínima para telas pequenas: MUITO IMPORTANTE! */
+  /* Defina uma altura que faça sentido para o visual do seu header no mobile. */
+  min-height: 250px; /* Exemplo: ajuste este valor conforme sua necessidade */
+  width: 100%;       /* Garante que o header ocupe a largura total */
+}
+
+/* --- Media Queries (opcionais, para adaptar a telas maiores) --- */
+/* Estas regras só se aplicam se a tela for maior que 768px. */
+/* O Tailwind faria isso com classes como 'md:min-h-[400px]'. */
+@media (min-width: 768px) {
+  header {
+    min-height: 400px; /* Aumenta a altura mínima do header para tablets e desktops */
+    /* background-position: center center; */ /* Opcional: Centraliza a imagem verticalmente também para telas maiores */
+  }
+}
