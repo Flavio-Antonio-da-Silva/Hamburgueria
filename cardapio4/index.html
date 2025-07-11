@@ -180,7 +180,7 @@
 
                                   <!--FIM ITEM REFRI 2--> 
                                   <!-- MODAL CART-->
-  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
     <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] ">
       <h2 class="text-black text-center  mb-2 text-2xl font-bold items-center justify-center">
         Meu Carrinho
@@ -192,7 +192,7 @@
                placeholder="Digite seu endereço completo!"
                class="w-full border-gray-400 border-2 p-1 text-black rounded"
                id="address">
-               <p class="text-red-500 hidden" id="address-warn  ">Digite seu endereço!</p>
+               <p class="text-red-500 hidden" id="address-warn  ">Digite seu endereço completo!!</p>
                <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn" class="text-gray-700">Fechar</button>
                 <button id="checkout-btn" class="bg-green-500 px-4 py-1 rounded">Finalizar pedido</button>
@@ -205,10 +205,10 @@
                                   <!--BUTTON CART FOOTER-->
   <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
     <button class="flex items-center  gap-2 text-yellow-400 font-bold">
-      <span id="cart-count">
+      <span id="cart-btn">
         0
       </span>
-      Seus itens escolhidos
+      veja seu carrinho
       <i class="fa fa-fa-cart-plus tex-lg text-white"></i>
     </button>
   </footer>    
@@ -219,6 +219,7 @@
 
 
     <div id="root"></div>
+    <script src="script.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

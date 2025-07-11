@@ -1,0 +1,11 @@
+const menu = getElementById("menu")
+const cartBtn = getElementById ("cart-btn")
+const cartModal = getElementBbyId ("cart-modal")
+const CartItems = getElementById ("cart-items")
+const cartTotal = getElementBbyId ("cart-total")
+const checkoutBtn = getElementBbyId ("checkout-btn")
+const closeBodalBtn = getElementBbyId ("close-modal-btn")
+const cartCount = getElementBbyId ("cart-count")
+const addressInput = getElementBbyId("address")
+const addressWarn = getElementBbyId ("address-warn")
+
