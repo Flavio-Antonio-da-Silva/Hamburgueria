@@ -7,5 +7,5 @@ const checkoutBtn = getElementBbyId ("checkout-btn")
 const closeBodalBtn = getElementBbyId ("close-modal-btn")
 const cartCount = getElementBbyId ("cart-count")
 const addressInput = getElementBbyId("address")
-const addressWarn = getElementBbyId ("address-warn")
+const addressWarn = getElementBbyId ("address-warn") brasil
 
