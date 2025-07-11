@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                          <!--Link de Impor de Icones-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-font-awesome.txt
-Exibindo font-awesome.txt…
+                            <!--font-awesome.txt
+                            <!-font roboto link-->
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                            <!--Fim link font roboto-->
+                          <!--Link de import Font Roboto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
                        <!--Fim do link de import de Icones-->
     <title>Haburgueria</title>
   </head>
@@ -33,26 +41,181 @@ Exibindo font-awesome.txt…
 
                               <!--INICIO DO CARDAPIO-->
     <div id="cardapio">
-      <main class="grid grid-col-1 gap-7 mx-auto max-w-7xl">
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16">
                              <!--ITEM 1 Hamburguer Smash-->
-    <div class="flex gap-2">
-     <img 
-     src="./src/assets/hamb-1.png"
-     alt="Hamburguer Smash"
-     class="w-28 h-28 rouded-md houver:scale-110 hover:-rotate-2 ruration-300"/>
-     <div>
-      <p></p>
-     </div>
-
+  <div class="flex gap-2">
+  <img 
+    src="./src/assets/hamb-1.png"
+    alt="Hamburguer Smash"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div> 
+      <p class="font-bold text-gray-900">Hammburguer  Smash</p>
+      <p class="text-gray-900">Um Smash Burger é um tipo de hambúrguer conhecido por ser fino e achatado, com bordas</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class="font-bold text-black">R$18,90</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Hammburguer Smash"
+        data-price="18.90"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
     </div>
+</div>
 
-                                <!--FIM DO ITEM 2-->
-                                <!--FIM DO ITEM 2-->
+                                <!--FIM DO ITEM 1-->
+                             <!--ITEM 1 Hamburguer Smash-->
+  <div class="flex gap-2">
+  <img 
+    src="./src/assets/hamb-2.png"
+    alt="Hamburguer Smash"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div> 
+      <p class="font-bold text-gray-900">Hambuerguer Duplo</p>
+      <p class="text-gray-900">Um Smash Burger é um tipo de hambúrguer conhecido por ser fino e achatado, com bordas</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class="font-bold text-black">R$32,90</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Hammburguer Duplo"
+        data-price="32.90"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
+    </div>
+</div>
 
+                                <!--FIM DO ITEM 3-->
+                           <!--ITEM 1 Hamburguer Smash-->
+  <div class="flex gap-2">
+  <img 
+    src="./src/assets/hamb-3.png"
+    alt="Hamburguer Salad"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div> 
+      <p class="font-bold text-gray-900">Hambuerguer Salad</p>
+      <p class="text-gray-900">Um Smash Burger é um tipo de hambúrguer conhecido por ser fino e achatado, com bordas.</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class="font-bold text-black">R$35,90</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Hammburguer Salad"
+        data-price="35.90"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
+    </div>
+</div>
+
+                                <!--FIM DO ITEM 3-->  
+                         <!--ITEM 4 Hamburguer Smash-->
+  <div class="flex gap-2">
+  <img 
+    src="./src/assets/hamb-4.png"
+    alt="Hamburguer da Casa"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div> 
+      <p class="font-bold text-gray-900">Hambuerguer da Casa</p>
+      <p class="text-gray-900">Um Smash Burger é um tipo de hambúrguer conhecido por ser fino e achatado, com bordas.</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class="font-bold text-black">R$30,00</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Hammburguer da Casa"
+        data-price="30.90"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
+    </div>
+</div>
+                                  <!--FIM DO ITEM 4-->                                                         
+                          
+
+                                
 
       </main>
+
+      <div class="mx-auto mmax-w-7xl px-2 mmy-2">
+        <h2 class="font-bold tex-3xl text-black">Bebidas</h2>
+      </div>
     </div>
-                              <!--FIM DO CARDAPIO-->                    
+                              <!--GRID BEBIDAS-->
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu">
+                              <!--ITEM REFRI 1-->
+  <div class="flex gap-2 w-full">
+  <img 
+    src="./src/assets/refri-1.png"
+    alt="Coca-Cola lata"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div class="w-full"> 
+      <p class="font-bold text-gray-900">Coca-Cola lata</p>
+      <p class="text-gray-900">Coca-Cola 350ml</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class="font-bold text-black">R$6,00</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Coca-Cola"
+        data-price="6"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
+    </div>
+</div>
+
+                                  <!--FIM ITEM REFRI 1-->   
+                                      <!--ITEM REFRI 1-->
+  <div class="flex gap-2 w-full">
+  <img 
+    src="./src/assets/refri-2.png"
+    alt="Guaraná lata"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div class="w-full"> 
+      <p class="font-bold text-gray-900">Guaraná lata</p>
+      <p class="text-gray-900">Guaraná 350ml</p>
+      <div class=" flex intms-center gap-2 justify-between mt-3">
+        <p class=" font-bold     text-black">R$6,00</p>
+        <button 
+        class="px-5 add-to-cart-btn" 
+        data-namme="Guaraná"
+        data-price="6"></button>
+        <i class="fa fa-cart-plus bg-gray-900  px-4 py-1  rounded"></i>
+      </div>
+    </div>
+</div>
+
+                                  <!--FIM ITEM REFRI 2--> 
+                                  <!-- MODAL CART-->
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] ">
+      <h2 class="text-black text-center  mb-2 text-2xl font-bold items-center justify-center">
+        Meu Carrinho
+      </h2>
+      <div class="flex justify-between mb-2 flex-col" id="cart-items">
+        <p class="text-black font-bold"> Total: <span id="cart-total"> 0.00 </span> </p>
+        <p class="text-black font-bold mt-7">Digite seu endereço:</p>
+        <input type="text"
+               placeholder="Digite seu endereço completo!"
+               class="w-full border-gray-400 border-2 p-1 text-black rounded"
+               id="address">
+               <p class="text-red-500 hidden" id="address-warn  ">Digite seu endereço!</p>
+               <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="text-gray-700">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 px-4 py-1 rounded">Finalizar pedido</button>
+               </div>
+      </div>
+    </div>
+
+  </div>
+                                   <!--FIM MODAL CART-->
+                                  <!--BUTTON CART FOOTER-->
+  <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button class="flex items-center  gap-2 text-yellow-400 font-bold">
+      <span id="cart-count">
+        0
+      </span>
+      Seus itens escolhidos
+      <i class="fa fa-fa-cart-plus tex-lg text-white"></i>
+    </button>
+  </footer>    
+                                  <!--FIM BUTTON CART FOOTER--> 
+       </div>
+
+    <!--FIM GRID BEBIDAS-->
 
 
     <div id="root"></div>
