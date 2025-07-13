@@ -50,7 +50,7 @@ function Item({ nome, preco, descricao, imagem }) {
         <div className="flex items-center gap-2 justify-between mt-3">
           <p className="font-bold text-black">R${preco}</p>
           <button
-            className="px-5 add-to-cart-btn"
+            onClick={() => addToCart({ name: 'Nome', price: valor })}
             data-name={nome}
             data-price={preco}
           >
