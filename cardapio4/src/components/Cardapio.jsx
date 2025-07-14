@@ -30,38 +30,34 @@ export default function Cardapio() {
       price: 30.00,
       img: '/src/assets/hamb-4.png',
     },
-     {
+    {
       name: 'Hamburguer Tripo',
       desc: 'Blend especial com molho da casa.',
       price: 38.40,
       img: '/src/assets/hamb-5.png',
     },
-
-     {
+    {
       name: 'Hamburguer da Casa',
       desc: 'Blend especial com molho da casa.',
       price: 44.90,
       img: '/src/assets/hamb-5.png',
     },
-
-     {
+    {
       name: 'Hamburguer de Costela',
       desc: 'Blend especial com molho da casa.',
       price: 55.90,
       img: '/src/assets/hamb-6.png',
     },
-
-     {
+    {
       name: 'Hamburguer Supreme',
       desc: 'Blend especial com molho da casa.',
       price: 48.90,
       img: '/src/assets/hamb-7.png',
     },
-
   ];
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-7">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
       {produtos.map((item) => (
         <div key={item.name} className="flex gap-2">
           <img
@@ -78,7 +74,7 @@ export default function Cardapio() {
               <p className="font-bold text-black">R${item.price.toFixed(2)}</p>
               <button
                 onClick={() => addToCart(item)}
-                className="text-white bg-gray-900 px-4 py-1 rounded hover:bg-black"
+                className="flex items-center justify-center text-white bg-gray-900 px-4 py-1 rounded hover:bg-black"
               >
                 <i className="fa fa-cart-plus"></i>
               </button>
