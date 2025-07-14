@@ -7,13 +7,13 @@ export default function Menu() {
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-7">
         <Item
-          nome="Coca-Cola lata"
+          name="Coca-Cola lata"
           preco="6.00"
           descricao="Coca-Cola 350ml"
           imagem="/src/assets/refri-1.png"
         />
         <Item
-          nome="Guaraná lata"
+          name="Guaraná lata"
           preco="6.00"
           descricao="Guaraná 350ml"
           imagem="/src/assets/refri-2.png"

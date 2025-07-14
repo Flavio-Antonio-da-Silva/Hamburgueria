@@ -1,19 +1,24 @@
-// Caminho: src/components/CartModal.jsx
-
+// src/components/CartModal.jsx
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function CartModal({ children }) {
   const { isCartOpen } = useContext(CartContext);
 
-  if (!isCartOpen) return null;
-
   return (
-    <div className="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
-      <div className="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-        <h2 className="text-black text-center mb-2 text-2xl font-bold">Meu Carrinho</h2>
-        {children}
-      </div>
-    </div>
+    <AnimatePresence>
+      {isCartOpen && (
+        <motion.div
+          initial={{ y: '100%' }}
+          animate={{ y: 0 }}
+          exit={{ y: '100%' }}
+          transition={{ type: 'spring', stiffness: 200, damping: 30 }}
+          className="fixed bottom-14 left-0 right-0 z-50 bg-white shadow-2xl rounded-t-2xl p-5"
+        >
+          {children}
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
