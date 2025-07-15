@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 
 export default function Cardapio() {
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, getTotal } = useContext(CartContext);
 
   const produtos = [
     {
@@ -52,36 +52,56 @@ export default function Cardapio() {
       name: 'Hamburguer Supreme',
       desc: 'Blend especial com molho da casa.',
       price: 48.90,
-      img: '/src/assets/hamb-7.png',
+      img: '',
     },
   ];
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-      {produtos.map((item) => (
-        <div key={item.name} className="flex gap-2">
-          <img
-            src={item.img}
-            alt={item.name}
-            className="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-          />
-          <div className="flex flex-col justify-between">
-            <div>
-              <p className="font-bold text-gray-900">{item.name}</p>
-              <p className="text-gray-900">{item.desc}</p>
-            </div>
-            <div className="flex items-center justify-between mt-3">
-              <p className="font-bold text-black">R${item.price.toFixed(2)}</p>
-              <button
-                onClick={() => addToCart(item)}
-                className="flex items-center justify-center text-white bg-gray-900 px-4 py-1 rounded hover:bg-black"
-              >
-                <i className="fa fa-cart-plus"></i>
-              </button>
+    <>
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        {produtos.map((item) => (
+          <div key={item.name} className="flex gap-2">
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div className="flex flex-col justify-between flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
+                <p className="font-bold text-gray-900">{item.name}</p>
+                <p className="text-gray-900">{item.desc}</p>
+              </div>
+              <div className="flex items-center justify-between mt-3">
+                <p className="font-bold text-black">
+                  {item.price.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                  })}
+                </p>
+                <button
+                  onClick={() => addToCart(item)}
+                  className="flex items-center justify-center text-white bg-gray-900 px-4 py-1 rounded hover:bg-black h-9 w-9"
+                >
+                  <i className="fa fa-cart-plus"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+
+      {/* Total dos itens selecionados */}
+      <div className="mt-6 text-right pr-2">
+        <p className="text-lg font-bold text-black">
+          Total do carrinho:{' '}
+          <span className="text-green-600">
+            {getTotal().toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+            })}
+          </span>
+        </p>
+      </div>
+    </>
   );
 }

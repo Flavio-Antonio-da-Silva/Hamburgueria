@@ -1,3 +1,4 @@
+// Caminho: src/components/Menu.jsx
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 
@@ -49,7 +50,7 @@ export default function Menu() {
         <h2 className="font-bold text-3xl text-black">Bebidas</h2>
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-7">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {bebidas.map((bebida, index) => (
           <Item
             key={index}
@@ -70,18 +71,23 @@ function Item({ produto, aoAdicionar }) {
         alt={produto.name}
         className="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
       />
-      <div className="w-full">
-        <p className="font-bold text-gray-900">{produto.name}</p>
-        <p className="text-gray-900">{produto.desc}</p>
-        <div className="flex items-center gap-2 justify-between mt-3">
+      <div className="w-full flex flex-col justify-between">
+        <div>
+          <p className="font-bold text-gray-900">{produto.name}</p>
+          <p className="text-gray-900">{produto.desc}</p>
+        </div>
+        <div className="flex items-center justify-between mt-3">
           <p className="font-bold text-black">
-            R$ {produto.price.toFixed(2)}
+            {produto.price.toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+            })}
           </p>
           <button
             onClick={aoAdicionar}
-            className="px-5 add-to-cart-btn"
+            className="flex items-center justify-center text-white bg-gray-900 px-4 py-1 rounded hover:bg-black h-9 w-9"
           >
-            <i className="fa fa-cart-plus bg-gray-900 px-4 py-1 rounded text-white"></i>
+            <i className="fa fa-cart-plus"></i>
           </button>
         </div>
       </div>
