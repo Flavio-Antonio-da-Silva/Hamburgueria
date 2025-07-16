@@ -9,6 +9,7 @@ import hamb4 from '../assets/hamb-4.png';
 import hamb5 from '../assets/hamb-5.png';
 import hamb6 from '../assets/hamb-6.png';
 import hamb7 from '../assets/hamb-7.png';
+import hamb8 from '../assets/hamb-8.png';
 
 export default function Cardapio() {
   const { addToCart, getTotal } = useContext(CartContext);
@@ -57,6 +58,12 @@ export default function Cardapio() {
       img: hamb6,
     },
     {
+      name: 'Hamburguer Supreme',
+      desc: 'Blend especial com molho da casa.',
+      price: 48.90,
+      img: hamb7,
+    },
+     {
       name: 'Hamburguer Supreme',
       desc: 'Blend especial com molho da casa.',
       price: 48.90,
