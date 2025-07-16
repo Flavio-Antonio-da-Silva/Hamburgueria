@@ -10,11 +10,11 @@ export default function CartModal({ children }) {
     <AnimatePresence>
       {isCartOpen && (
         <motion.div
-          initial={{ y: '100%' }}
+          initial={{ y: '30%' }}
           animate={{ y: 0 }}
-          exit={{ y: '100%' }}
+          exit={{ y: '30%' }}
           transition={{ type: 'spring', stiffness: 200, damping: 30 }}
-          className="fixed bottom-14 left-0 right-0 z-50 bg-white shadow-2xl rounded-t-2xl p-5"
+          className="fixed bottom-14 left-0 right-0 z-25 bg-white shadow-2xl rounded-t-2xl p-5"
         >
           {children}
         </motion.div>
