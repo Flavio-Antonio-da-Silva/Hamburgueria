@@ -29,7 +29,7 @@ export function CartProvider({ children }) {
     setCartItems(cartItems.filter(item => item.name !== productName));
   };
 
-  // Abre ou fecha o modal
+  // A/re ou fecha o modal
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
