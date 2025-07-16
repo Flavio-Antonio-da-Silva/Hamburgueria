@@ -1,7 +1,7 @@
 export default function Endereco() {
   return (
     <span className="font-medium text-white px-1 py-2 mt-5">
-      Rua do sucesso n°10 Copacabana-RJ
+      Rua do sucesso n°50 Copacabana-RJ
     </span>
   );
 }

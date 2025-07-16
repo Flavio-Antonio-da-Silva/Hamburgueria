@@ -19,8 +19,8 @@ export default function Cardapio() {
       img: '/src/assets/hamb-2.png',
     },
     {
-      name: 'Hamburguer Salad',
-      desc: 'Smash com alface, tomate e molho especial.',
+      name: 'Hamburguer Salad    ',
+      desc: '   Smash com alface, tomate e molho especial.',
       price: 35.90,
       img: '/src/assets/hamb-3.png',
     },
@@ -31,8 +31,8 @@ export default function Cardapio() {
       img: '/src/assets/hamb-4.png',
     },
     {
-      name: 'Hamburguer Tripo',
-      desc: 'Blend especial com molho da casa.',
+      name: 'Hamburguer Tripo     ',
+      desc: '   Blend especial com molho da casa.',
       price: 38.40,
       img: '/src/assets/hamb-5.png',
     },
@@ -52,7 +52,7 @@ export default function Cardapio() {
       name: 'Hamburguer Supreme',
       desc: 'Blend especial com molho da casa.',
       price: 48.90,
-      img: '',
+      img: '/src/assets/hamb-7.png',
     },
   ];
 
