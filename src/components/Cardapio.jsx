@@ -2,6 +2,14 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 
+import hamb1 from '../assets/hamb-1.png';
+import hamb2 from '../assets/hamb-2.png';
+import hamb3 from '../assets/hamb-3.png';
+import hamb4 from '../assets/hamb-4.png';
+import hamb5 from '../assets/hamb-5.png';
+import hamb6 from '../assets/hamb-6.png';
+import hamb7 from '../assets/hamb-7.png';
+
 export default function Cardapio() {
   const { addToCart, getTotal } = useContext(CartContext);
 
@@ -10,49 +18,49 @@ export default function Cardapio() {
       name: 'Hamburguer Smash',
       desc: 'Um Smash Burger é um tipo de  achatado, com bordas.',
       price: 18.90,
-      img: '/src/assets/hamb-1.png',
+      img: hamb1,
     },
     {
       name: 'Hamburguer Duplo',
       desc: 'Hambúrguer duplo com queijo e bacon crocante.',
       price: 32.90,
-      img: '/src/assets/hamb-2.png',
+      img: hamb2,
     },
     {
-      name: 'Hamburguer Salad    ',
-      desc: '   Smash com alface, tomate e molho especial.',
+      name: 'Hamburguer Salad',
+      desc: 'Smash com alface, tomate e molho especial.',
       price: 35.90,
-      img: '/src/assets/hamb-3.png',
+      img: hamb3,
     },
     {
       name: 'Hamburguer da Casa',
       desc: 'Blend especial com molho da casa.',
       price: 30.00,
-      img: '/src/assets/hamb-4.png',
+      img: hamb4,
     },
     {
-      name: 'Hamburguer Tripo     ',
-      desc: '   Blend especial com molho da casa.',
+      name: 'Hamburguer Triplo',
+      desc: 'Blend especial com molho da casa.',
       price: 38.40,
-      img: '/src/assets/hamb-5.png',
+      img: hamb5,
     },
     {
-      name: 'Hamburguer da Casa',
+      name: 'Hamburguer Supremo',
       desc: 'Blend especial com molho da casa.',
       price: 44.90,
-      img: '/src/assets/hamb-5.png',
+      img: hamb5,
     },
     {
       name: 'Hamburguer de Costela',
       desc: 'Blend especial com molho da casa.',
       price: 55.90,
-      img: '/src/assets/hamb-6.png',
+      img: hamb6,
     },
     {
       name: 'Hamburguer Supreme',
       desc: 'Blend especial com molho da casa.',
       price: 48.90,
-      img: '/src/assets/hamb-7.png',
+      img: hamb7,
     },
   ];
 
