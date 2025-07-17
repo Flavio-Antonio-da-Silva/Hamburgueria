@@ -9,7 +9,7 @@ export function CartProvider({ children }) {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [address, setAddress] = useState('');
   const [showAddressWarn, setShowAddressWarn] = useState(false);
-
+  
   // Adiciona item ao carrinho
   const addToCart = (product) => {
     const exists = cartItems.find(item => item.name === product.name);

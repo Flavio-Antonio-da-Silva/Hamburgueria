@@ -1,6 +1,6 @@
 @import "tailwindcss";
 #root {
-  background-color: aliceblue;
+  background-color: rgb(235, 226, 226);
 
 }
 
@@ -21,7 +21,7 @@ header {
   background-size: cover;       /* Essencial para responsividade da imagem */
   background-position: center top; /* Posicionamento para mobile */
   background-repeat: no-repeat; /* Evita repetição */
-
+  
   /* Altura mínima para telas pequenas: MUITO IMPORTANTE! */
   /* Defina uma altura que faça sentido para o visual do seu header no mobile. */
   min-height: 250px; /* Exemplo: ajuste este valor conforme sua necessidade */
