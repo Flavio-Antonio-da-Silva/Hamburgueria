@@ -4,9 +4,9 @@ import { CartContext } from '../context/CartContext';
 
 import coca from '../assets/refri-1.png';
 import guarana from '../assets/refri-2.png';
-import agua from '../assets/agua-gas.png';
-import cerveja from '../assets/cerveja.png';
-import coca2l from '../assets/coca-2L.png';
+import agua from '../assets/agua-com-g-t.png';
+import cerveja from '../assets/heyneke-t.png';
+import coca2l from '../assets/coca-2l-t.png';
 
 export default function Menu() {
   const { addToCart } = useContext(CartContext);
@@ -19,7 +19,7 @@ export default function Menu() {
       img: coca,
     },
     {
-      name: 'Guaraná lata',
+      name: 'Guaraná Antarctica',
       desc: '350ml',
       price: 6.9,
       img: guarana,
@@ -31,8 +31,8 @@ export default function Menu() {
       img: agua,
     },
     {
-      name: 'Cerveja lata',
-      desc: '350ml',
+      name: 'Heyneken long neck',
+      desc: '330ml',
       price: 7.5,
       img: cerveja,
     },

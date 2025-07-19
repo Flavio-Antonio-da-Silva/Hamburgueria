@@ -53,7 +53,7 @@ export default function Header() {
       </div>
 
       {/* Horário */}
-      <p className="text-sm md:text-base mt-2 drop-shadow-md bg-green-500 rounded-full">
+      <p className="text-sm md:text-base mt-2 drop-shadow-md bg-green-500 rounded-full py-2 px-2">
   Seg. à Dom. 18:00 às 22:00
 </p>
 
