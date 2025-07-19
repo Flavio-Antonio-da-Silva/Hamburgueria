@@ -73,7 +73,7 @@ export default function Cardapio() {
 
   return (
     <>
-      <div className="mx-auto max-w-7xl px-1 my-2">
+      <div className="mx-auto max-w-7xl px-0 my-0 mt-0">
         <h2 className="font-bold text-3xl py-1 text-black">Cardápio</h2>
       </div>
 

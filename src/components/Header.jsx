@@ -19,6 +19,7 @@ export default function Header() {
         shadow-md bg-cover bg-center bg-no-repeat
         py-1 pt-1 pb-4
         min-h-[250px] md:min-h-[400px]
+        mb-0
       "
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -48,12 +49,12 @@ export default function Header() {
       </h1>
 
       {/* Endereço */}
-      <div className="mt-2">
+      <div className="mt-1 py-0">
         <Endereco />
       </div>
 
       {/* Horário */}
-      <p className="text-sm md:text-base mt-2 drop-shadow-md bg-green-500 rounded-full py-2 px-2">
+      <p className="text-sm md:text-base mt-2 drop-shadow-md bg-green-500 rounded-full py-2 my-0 px-2">
   Seg. à Dom. 18:00 às 22:00
 </p>
 

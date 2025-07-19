@@ -23,9 +23,9 @@ function App() {
       {/* Header completo com bg + logo + endereço + horário */}
       <Header />
 
-      <main className="mx-auto max-w-7xl px-2 mt-[300px] mb-16">
+      <main className="mx-auto max-w-7xl px-2 mt-[100px] mb-8">
         {/* ↑ mt ajusta espaço para não ficar por trás do header fixo. Ajuste conforme visual */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 py-2 mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 py-0 mt-0 mb-5">
           Escolha seu pedido!
         </h2>
 
