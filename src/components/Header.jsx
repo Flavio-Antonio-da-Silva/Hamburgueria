@@ -15,9 +15,9 @@ export default function Header() {
       className="
         w-full text-white
         flex flex-col items-center justify-center
-        fixed top-0 left-0 z-50
+        top-0 left-0 z-50
         shadow-md bg-cover bg-center bg-no-repeat
-        px-4 pt-10 pb-4
+        py-1 pt-1 pb-4
         min-h-[250px] md:min-h-[400px]
       "
       style={{ backgroundImage: `url(${bg})` }}
@@ -39,7 +39,7 @@ export default function Header() {
       <img
         src={logo}
         alt="Logo da Hamburgueria"
-        className="w-24 h-24 md:w-32 md:h-32 object-contain mb-3"
+        className="w-24 h-24 md:w-32 md:h-32 object-contain mb-3 rounded-full"
       />
 
       {/* Nome da Hamburgueria */}
@@ -53,9 +53,10 @@ export default function Header() {
       </div>
 
       {/* Horário */}
-      <p className="text-sm md:text-base mt-2 drop-shadow-md">
-        Seg. à Dom. 18:00 às 22:00
-      </p>
+      <p className="text-sm md:text-base mt-2 drop-shadow-md bg-green-500 rounded-full">
+  Seg. à Dom. 18:00 às 22:00
+</p>
+
     </header>
   );
 }

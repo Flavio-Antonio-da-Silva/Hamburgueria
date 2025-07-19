@@ -74,7 +74,7 @@ export default function Cardapio() {
   return (
     <>
       <div className="mx-auto max-w-7xl px-1 my-2">
-        <h2 className="font-bold text-3xl text-black">Cardápio</h2>
+        <h2 className="font-bold text-3xl py-1 text-black">Cardápio</h2>
       </div>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
