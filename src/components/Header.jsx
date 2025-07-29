@@ -23,18 +23,21 @@ export default function Header() {
       "
       style={{ backgroundImage: `url(${bg})` }}
     >
-      {/* Botão Carrinho */}
-      <button
-        onClick={toggleCart}
+      {/* botão link whatsapp */}
+      <a
+        href="https://wa.me/5521977496651"
+        target="_blank"
+        rel="noopener noreferrer"
         className="
-          absolute right-4 top-4
-          bg-white text-red-600 p-2 rounded-full shadow
+          absolute right-4 top-4 py-2 
+          bg-green-500
+          text-white p-3 rounded-full shadow
           hover:scale-105 transition-transform
         "
-        aria-label="Abrir carrinho"
+        aria-label="Whatsapp"
       >
-        <i className="fa-solid fa-cart-shopping text-lg"></i>
-      </button>
+        <i className="fa-brands fa-whatsapp text-lg"></i>
+      </a>
 
       {/* Logo */}
       <img
